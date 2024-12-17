@@ -126,9 +126,6 @@ transition: all 0.3s ease;  /* Thêm hiệu ứng mượt khi thay đổi kích 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
 /* Vùng chứa cây thông */
 #tree-container {
   position: fixed;

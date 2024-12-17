@@ -79,7 +79,6 @@ function generateTrees() {
   }
 }
 
-window.onload = generateTrees;
 
 let screenWidth = window.innerWidth;  // Lấy chiều rộng màn hình
 let screenHeight = window.innerHeight;  // Lấy chiều cao màn hình
@@ -99,11 +98,15 @@ function updateCardSize() {
   // Đặt chiều rộng và chiều cao cho thẻ card
   card.style.width = `${cardWidth}px`;
   card.style.height = `${cardHeight}px`;
+	if (screenWidth <= 600) {
+		card.style.marginBottom = `${(screenHeight * 0.15)}px`;  // 15% of window width
+	}
 }
 
 // Gọi hàm khi tải trang và khi thay đổi kích thước màn hình
 window.onload = updateCardSize;
 window.onresize = updateCardSize;
+window.onload = generateTrees;
 
 function adjustCardStyle() {
   const card = document.querySelector('.card');
@@ -120,6 +123,7 @@ function adjustCardStyle() {
     title1.style.fontSize = '1rem';  // Cỡ chữ của title
     message.style.fontSize = '1rem';  // Cỡ chữ của message
     closeBtn.style.fontSize = '0.8rem';  // Cỡ chữ của nút đóng
+	card.style.marginBottom = `${(screenHeight * 0.15)}px`;  // 15% of window width	
   } else {
     // Điều chỉnh cho màn hình lớn hơn 600px
     card.style.maxHeight = '85vh';  // Chiều cao tối đa của card
@@ -132,9 +136,11 @@ function adjustCardStyle() {
 
 // Gọi hàm điều chỉnh khi trang được tải hoặc khi kích thước cửa sổ thay đổi
 window.addEventListener('resize', adjustCardStyle);
+window.onload = generateTrees;
 
 // Gọi một lần khi trang vừa được tải
 adjustCardStyle();
+window.onload = generateTrees;
 
 
 //##########
@@ -265,3 +271,4 @@ function centerModal() {
 
 // Khi người dùng thay đổi kích thước cửa sổ, gọi lại hàm căn giữa
 window.addEventListener('resize', centerModal);
+window.onload = generateTrees;
