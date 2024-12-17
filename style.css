@@ -30,16 +30,16 @@ pointer-events: none; /* Cho phép click xuyên qua hiệu ứng */
 .card {
   background: #f9f3e6;
   color: #333;
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   max-width: 1200px;
   width: 80%;
-  height: 85%;
+  height: 72%;
   max-height: 85vh; /* giới hạn chiều cao tối đa của thiệp */
-   overflow-y: auto; /*cho phép cuộn nếu nội dung vượt quá chiều cao */
-position: relative; /*để định vị nút đóng bên trong card*/
- z-index: -2;
+  overflow-y: auto; /*cho phép cuộn nếu nội dung vượt quá chiều cao */
+  position: relative; /*để định vị nút đóng bên trong card*/
+  z-index: -2;
 }
 
 /* Nút đóng */
@@ -59,12 +59,19 @@ position: relative; /*để định vị nút đóng bên trong card*/
 /* Đảm bảo popup hiển thị đúng trên màn hình di động */
 @media (max-width: 768px) {
   .card {
-    max-height: 90vh; /* Điều chỉnh chiều cao thiệp trên màn hình nhỏ */
+    max-height: 80vh; /* Điều chỉnh chiều cao thiệp trên màn hình nhỏ */
   }
 
   .card-img {
     width: 100%; /* Đảm bảo hình ảnh vừa với màn hình di động */
   }
+
+.title {
+    font-size: 1.0rem;  /* Cỡ chữ nhỏ hơn trên màn hình nhỏ */
+  }
+.close-btn{
+	 font-size: 0.8rem;  /* Cỡ chữ nhỏ hơn trên màn hình nhỏ */
+}
 }
 
 
@@ -73,28 +80,25 @@ position: relative; /*để định vị nút đóng bên trong card*/
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #880000;
-}
-/* Media query cho màn hình nhỏ */
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.5rem;  /* Cỡ chữ nhỏ hơn trên màn hình nhỏ */
-  }
+padding: 0px;
+    margin: 0px;
 }
 
 .message {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
   margin: 15px 0;
 }
 
 .card-img {
   width: 70%;
-  margin: 15px auto;
+	padding: 0px;
+    margin: 0px;
 }
 
 .footer-text {
-  margin-top: 10px;
+  margin-top: 5%;
   font-size: 1rem;
   color: #555;
 }
@@ -120,14 +124,6 @@ position: relative; /*để định vị nút đóng bên trong card*/
   right: 20px;
 }
 
-/* #music-btn { */
-  /* background: #ff4d4f; */
-  /* color: white; */
-  /* border: none; */
-  /* border-radius: 50px; */
-  /* padding: 10px ; */
- /* z-index: 10; /* Nút phát nhạc nằm trên cùng */ */
-/* } */
 /* Đặt lại độ rộng của thiệp và đảm bảo hình ảnh không vượt quá giới hạn */
 .greeting-card {
   width: 80%;  /* Tăng độ rộng thiệp */
@@ -141,9 +137,6 @@ position: relative; /*để định vị nút đóng bên trong card*/
 
 
 
-.close-btn:hover {
-  color: #d63384; /* Đổi màu khi hover */
-}
 
 /* Vùng chứa cây thông */
 #tree-container {
