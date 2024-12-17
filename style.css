@@ -43,10 +43,13 @@ body {
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   max-width: 1200px;
-  width: 100%;
+  width: 80%;
+  height: 85%;
   max-height: 80vh; /* Giới hạn chiều cao tối đa của thiệp */
   overflow-y: auto; /* Cho phép cuộn nếu nội dung vượt quá chiều cao */
+position: relative; /* Để định vị nút đóng bên trong card */
 }
+
 
 /* Đảm bảo popup hiển thị đúng trên màn hình di động */
 @media (max-width: 768px) {
@@ -116,7 +119,7 @@ body {
 
 /* Đặt lại độ rộng của thiệp và đảm bảo hình ảnh không vượt quá giới hạn */
 .greeting-card {
-  width: 90%;  /* Tăng độ rộng thiệp */
+  width: 80%;  /* Tăng độ rộng thiệp */
   max-width: 1200px; /* Đặt một giới hạn độ rộng tối đa */
   margin: 50px auto;  /* Căn giữa thiệp */
   background-color: #fff;
@@ -127,17 +130,16 @@ body {
 
 /* Nút đóng */
 .close-btn {
-  margin-top: 5%;  /* Căn giữa thiệp */
-  background-color: #fff;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  position: absolute; /* Định vị nút đóng trong card */
+  top: 10px;           /* Khoảng cách từ trên cùng */
+  right: 10px;         /* Khoảng cách từ bên phải */
   background-color: transparent;
   color: #333;
   font-size: 1.5rem;
   border: none;
   cursor: pointer;
   transition: all 0.3s;
+  z-index: 10;         /* Đảm bảo nút đóng nằm trên card */
 }
 
 .close-btn:hover {
