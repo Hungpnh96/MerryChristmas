@@ -29,6 +29,14 @@ function showCard() {
   button.style.display = "none"; // Ẩn nút
 }
 
+// Đóng thiệp
+function closeCard() {
+  const card = document.getElementById("card");
+  card.classList.add("hidden"); // Ẩn thiệp khi đóng
+  const button = document.getElementById("show-wish-btn");
+  button.style.display = "inline-block"; // Hiển thị lại nút chúc mừng
+}
+
 // Phát hoặc dừng nhạc
 let isPlaying = false;
 const bgMusic = document.getElementById("bg-music");
@@ -44,3 +52,5 @@ function toggleMusic() {
   }
   isPlaying = !isPlaying;
 }
+
+
