@@ -1,0 +1,116 @@
+/* Thiết lập nền */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #0d1b2a;
+  color: #fff;
+  overflow: hidden;
+}
+
+#snowfall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Thiệp chúc mừng */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  font-size: 2rem;
+  color: #d63384;
+}
+
+.message {
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+.card-img {
+  width: 70%;
+  margin: 15px auto;
+}
+
+.footer-text {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.show-wish-btn {
+  padding: 15px 20px;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.show-wish-btn:hover {
+  background-color: #218838;
+}
+
+.music-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#music-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 
+}
+
+/* Đặt lại độ rộng của thiệp và đảm bảo hình ảnh không vượt quá giới hạn */
+.greeting-card {
+  width: 90%;  /* Tăng độ rộng thiệp */
+  max-width: 1200px; /* Đặt một giới hạn độ rộng tối đa */
+  margin: 50px auto;  /* Căn giữa thiệp */
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Nội dung thiệp */
+.greeting-card-content {
+  text-align: center;
+}
+
+/* Hình ảnh trong thiệp */
+.greeting-card img {
+  width: 100%;  /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của thiệp nhưng không vượt quá */
+  height: auto;
+  max-width: 600px;  /* Giới hạn kích thước tối đa của hình ảnh */
+  margin-top: 20px;
+  border-radius: 10px;
+}

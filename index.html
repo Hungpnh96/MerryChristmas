@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiệp Giáng Sinh</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Thư viện Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <!-- Hiệu ứng tuyết rơi -->
+  <div id="snowfall"></div>
+
+  <!-- Thiệp chúc mừng -->
+  <div class="card-container animate__animated animate__fadeIn">
+    <button id="show-wish-btn" class="show-wish-btn" onclick="showCard()">Nhấn vào đây để nhận lời chúc 🎁</button>
+    <div id="card" class="card hidden animate__animated">
+      <h1 class="title">🎄 Merry Christmas 🎄</h1>
+      <p class="message">
+        <h1>Kính gửi Cha, Sơ và toàn thể anh chị em học viên lớp giáo lý hôn nhân,</h1>
+<p>
+Trong mùa Giáng Sinh này, con xin gửi lời chúc an lành, bình yên và hạnh phúc đến tất cả mọi người.
+Nguyện xin Hài Nhi Giêsu ban tràn ơn lành xuống trên Cha, Sơ và từng thành viên trong lớp. 
+Xin Chúa luôn nâng đỡ và đồng hành để chúng ta tiếp tục cùng nhau xây dựng nền tảng hôn nhân bền vững, thiêng liêng và tràn ngập yêu thương.
+</p>
+<p>
+Cảm ơn Cha và Sơ vì sự hy sinh thầm lặng, những lời giảng dạy tâm huyết và tình yêu thương vô điều kiện. 
+Cảm ơn anh chị em đã cùng nhau chia sẻ, động viên và đồng hành trong hành trình chuẩn bị cho một mái ấm mới.
+</p>
+Chúc mọi người một mùa Giáng Sinh tràn đầy hồng ân, niềm vui và sức khỏe.
+Xin Chúa luôn ở cùng chúng ta trong từng bước đường phía trước.
+
+Merry Christmas và một năm mới tràn ngập tình yêu của Thiên Chúa! 🎄✨ 🌟❤️
+      </p>
+      <img src="image/lopglhn.jpg" alt="Giáng Sinh" class="card-img">
+      <p class="footer-text">Hãy mỉm cười và tận hưởng những khoảnh khắc tuyệt vời! 🤗</p>
+    </div>
+  </div>
+
+  <!-- Nút phát nhạc -->
+  <div class="music-player">
+    <audio id="bg-music" loop>
+      <source src="music/giangsinh.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="toggleMusic()" id="music-btn">🎶 Phát nhạc</button>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
