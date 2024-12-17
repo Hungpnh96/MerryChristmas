@@ -10,22 +10,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-  <!-- Hiệu ứng tuyết rơi -->
-  <div id="snowfall"></div>
-
+<!-- Thêm 2 containers cho hiệu ứng tuyết và ông già Noel -->
+<div id="snowfall" class="particles"></div>
   <!-- Thiệp chúc mừng -->
   <div class="card-container animate__animated animate__fadeIn">
-    <button id="show-wish-btn" class="show-wish-btn" onclick="showCard()">Nhấn vào đây để nhận lời chúc 🎁</button>
+    <button id="show-wish-btn" class="show-wish-btn" onclick="showCard()">🎁 Nhấn vào đây để nhận lời chúc 🎁</button>
     <div id="card" class="card hidden animate__animated">
 	<!-- Nút đóng thiệp -->
     <button class="close-btn" onclick="closeCard()">❌</button>
       <h1 class="title">🎄 Merry Christmas 🎄</h1>
       <p class="message">
-        <h1>Kính gửi Cha, Sơ và toàn thể anh chị em học viên lớp giáo lý hôn nhân.</h1>
+        <h1>Kính gửi Cha, Sơ và tất cả học viên lớp giáo lý dự tòng - hôn nhân</h1>
 <p>
 Trong mùa Giáng Sinh này, con xin gửi lời chúc an lành, bình yên và hạnh phúc đến tất cả mọi người.
 Nguyện xin Hài Nhi Giêsu ban tràn ơn lành xuống trên Cha, Sơ và từng thành viên trong lớp. 
-Xin Chúa luôn nâng đỡ và đồng hành để chúng ta tiếp tục cùng nhau xây dựng nền tảng hôn nhân bền vững, thiêng liêng và tràn ngập yêu thương.
+Xin Chúa luôn nâng đỡ và đồng hành để chúng ta tiếp tục cùng nhau xây dựng nền tảng đức tin, hôn nhân bền vững, thiêng liêng và tràn ngập yêu thương.
 </p>
 <p>
 Cảm ơn Cha và Sơ vì sự hy sinh thầm lặng, những lời giảng dạy tâm huyết và tình yêu thương vô điều kiện. 
@@ -40,7 +39,8 @@ Merry Christmas và một năm mới tràn ngập tình yêu của Thiên Chúa!
       <p class="footer-text">Hãy mỉm cười và tận hưởng những khoảnh khắc tuyệt vời!  🤗</p>
     </div>
   </div>
-
+<!-- Container cây thông -->
+<div id="tree-container"></div>
   <!-- Nút phát nhạc -->
   <div class="music-player">
     <audio id="bg-music" loop>
