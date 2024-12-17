@@ -70,6 +70,13 @@ position: relative; /* Để định vị nút đóng bên trong card */
 .title {
   font-size: 2rem;
   color: #d63384;
+font-size: 5vw;  /* Font-size tự động thay đổi theo chiều rộng màn hình */
+}
+/* Media query cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;  /* Cỡ chữ nhỏ hơn trên màn hình nhỏ */
+  }
 }
 
 .message {
